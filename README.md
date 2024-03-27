@@ -14,9 +14,9 @@ The MERN stack consists of the following components:
   
 - [**Express.js**:](https://expressjs.com/) [A minimalist web framework for Node.js that simplifies the process of building web applications and APIs with JavaScript.](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/blob/main/Express%20Js%20By%20Aman%20Mehta.md)
 
-- [**React.js**:](https://react.dev/) A JavaScript library for building interactive user interfaces. React.js allows developers to create reusable UI components and efficiently update the UI based on changes in data.
+- [**React.js**:](https://react.dev/) [A JavaScript library for building interactive user interfaces. React.js allows developers to create reusable UI components and efficiently update the UI based on changes in data.
 
-- [**Node.js**:](https://nodejs.org/en) A runtime environment for executing JavaScript code outside the browser. Node.js enables server-side development using JavaScript, allowing for seamless integration with the frontend built with React.js.
+- [**Node.js**:](https://nodejs.org/en) A runtime environment for executing JavaScript code outside the browser. Node.js enables server-side development using JavaScript, allowing for seamless integration with the frontend built with React.js.](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/blob/main/React.js%20By%20Aman%20Mehta.md)
 
 ## [Benefits of MERN Stack Development](https://www.skillvertex.com/blog/mern-stack-advantages-and-disadvantages/)
 
