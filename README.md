@@ -17,7 +17,7 @@ The MERN stack consists of the following components:
 
 - [**Node.js**:](https://nodejs.org/en) A runtime environment for executing JavaScript code outside the browser. Node.js enables server-side development using JavaScript, allowing for seamless integration with the frontend built with React.js.
 
-## Benefits of MERN Stack Development
+## [Benefits of MERN Stack Development](https://www.skillvertex.com/blog/mern-stack-advantages-and-disadvantages/)
 
 - **Single Language**: With MERN stack development, developers can use JavaScript for both frontend and backend development. This streamlines the development process and reduces the learning curve for developers who are already familiar with JavaScript.
 
