@@ -1,4 +1,5 @@
 # Node.js By Aman Mehta 
+![Screenshot_2024-03-27-22-19-53-23_680d03679600f7af0b4c700c6b270fe7](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/assets/96304523/8b7f13c4-fd12-4982-867f-f52dc65112cd)
 
 Node.js is a powerful, open-source, cross-platform JavaScript runtime environment that allows developers to build server-side and networking applications using JavaScript. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, making it ideal for building scalable and high-performance web applications, APIs, and microservices.
 
