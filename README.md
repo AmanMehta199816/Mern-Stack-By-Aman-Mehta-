@@ -13,7 +13,7 @@ The MERN stack consists of the following components:
   
 - [**Express.js**:](https://expressjs.com/) A minimalist web framework for Node.js that simplifies the process of building web applications and APIs with JavaScript.
 
-- **React.js**: A JavaScript library for building interactive user interfaces. React.js allows developers to create reusable UI components and efficiently update the UI based on changes in data.
+- [**React.js**:](https://react.dev/) A JavaScript library for building interactive user interfaces. React.js allows developers to create reusable UI components and efficiently update the UI based on changes in data.
 
 - **Node.js**: A runtime environment for executing JavaScript code outside the browser. Node.js enables server-side development using JavaScript, allowing for seamless integration with the frontend built with React.js.
 
