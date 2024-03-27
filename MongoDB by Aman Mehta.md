@@ -1,4 +1,5 @@
 # MongoDB By Aman Mehta 
+![Screenshot_2024-03-27-22-17-25-08_680d03679600f7af0b4c700c6b270fe7](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/assets/96304523/4c599903-e12d-4c95-8299-67446c101fa4)
 
 MongoDB is a popular open-source NoSQL database that provides high performance, scalability, and flexibility for storing and managing data. It is designed to handle large volumes of unstructured or semi-structured data and offers rich query capabilities and horizontal scalability.
 
