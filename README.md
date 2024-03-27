@@ -6,6 +6,7 @@
 MERN stack development refers to the process of building web applications using four key technologies: MongoDB, Express.js, React.js, and Node.js. This powerful combination of tools allows developers to create full-stack JavaScript applications with ease. Below is an overview of MERN stack development, its benefits, and learning resources to get started.
 
 ## About MERN Stack
+![sWZUU7OAScUGz0tYmm](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/assets/96304523/dca2b7e1-a64e-41df-81b1-fdf0fde8d82f)
 
 The MERN stack consists of the following components:
 
