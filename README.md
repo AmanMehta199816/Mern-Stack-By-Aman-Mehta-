@@ -53,6 +53,115 @@ Here are some resources to help you get started with MERN stack development:
    - [Stack Overflow](https://stackoverflow.com/questions/tagged/mern-stack)
    - [Reddit - r/MERN](https://www.reddit.com/r/mern/)
 
+ ![JTJ3gel6umqORZTNMI](https://github.com/AmanMehta199816/Mern-Stack-By-Aman-Mehta-/assets/96304523/ffe3bea9-519e-4d42-908e-37180da74652)
+
+
+Backend (Node.js + Express.js):
+
+```javascript
+// server.js
+
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
+app.use(bodyParser.json());
+app.use(cors());
+
+// MongoDB Configuration
+mongoose.connect('mongodb://localhost:27017/mern_app', { useNewUrlParser: true, useUnifiedTopology: true });
+const connection = mongoose.connection;
+connection.once('open', () => {
+    console.log('MongoDB database connection established successfully');
+});
+
+// API Routes
+const todoRouter = require('./routes/todo');
+app.use('/todos', todoRouter);
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+```
+
+```javascript
+// routes/todo.js
+
+const express = require('express');
+const router = express.Router();
+const Todo = require('../models/todo.model');
+
+// Get all todos
+router.route('/').get((req, res) => {
+    Todo.find()
+        .then(todos => res.json(todos))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+module.exports = router;
+```
+
+```javascript
+// models/todo.model.js
+
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const todoSchema = new Schema({
+    description: { type: String, required: true },
+    completed: { type: Boolean, default: false }
+}, {
+    timestamps: true
+});
+
+const Todo = mongoose.model('Todo', todoSchema);
+
+module.exports = Todo;
+```
+
+Frontend (React.js):
+
+```javascript
+// App.js
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function App() {
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/todos/')
+      .then(response => {
+        setTodos(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  return (
+    <div>
+      <h1>MERN Stack Todo App</h1>
+      <ul>
+        {todos.map(todo => (
+          <li key={todo._id}>{todo.description}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+```
+
+This example sets up a basic MERN stack application with a backend server running on Node.js and Express.js, connected to a MongoDB database. It also includes a simple frontend built with React.js to display a list of todos retrieved from the backend API. You can further expand and customize this application based on your requirements.
 ## Conclusion
 
 MERN stack development offers a modern and efficient approach to building web applications, allowing developers to leverage the power of JavaScript across the entire stack. By combining MongoDB, Express.js, React.js, and Node.js, developers can create scalable, interactive, and feature-rich applications that meet the needs of modern businesses and users.
